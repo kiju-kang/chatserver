@@ -1,3 +1,4 @@
 #!/bin/bash
 chown -R centos. /var/www/html/
+chmod +x /var/www/html/scripts/*
 
