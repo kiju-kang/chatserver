@@ -7,20 +7,15 @@ hooks:
   ApplicationStop:
     - location: scripts/stop_server
       timeout: 300
-      runas: centos
   BeforeInstall:
     - location: scripts/install_dependencies
       timeout: 300
-      runas: centos
   AfterInstall:
     - location: scripts/change_permission
       timeout: 300
-      runas: centos
   ApplicationStart:
     - location: scripts/start_server
       timeout: 300
-      runas: centos
   ValidateService:
     - location: scripts/check_service
       timeout: 300
-      runas: centos
