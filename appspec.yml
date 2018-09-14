@@ -4,18 +4,18 @@ files:
   - source: /
     destination: /var/www/html/
 hooks:
-  ApplicationStop:
-    - location: scripts/stop_server
-      timeout: 300
+#  ApplicationStop:
+#    - location: scripts/stop_server
+#      timeout: 300
   BeforeInstall:
     - location: scripts/install_dependencies
       timeout: 300
   AfterInstall:
     - location: scripts/change_permission
       timeout: 300
-  ApplicationStart:
-    - location: scripts/start_server
-      timeout: 300
+#  ApplicationStart:
+#    - location: scripts/start_server
+#      timeout: 300
   ValidateService:
     - location: scripts/check_service
       timeout: 300
